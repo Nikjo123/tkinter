@@ -5,7 +5,7 @@ win=Tk()
 win.title("STAFF PROFILE PAGE ")
 
 label1=Label(win,text="STAFF PROFILE PAGE AND PATIENT INFO",font=("Arial",30,"bold"),border=10,relief=GROOVE,bg="lightgrey",fg="blue")
-label1.grid(row=0,column=0,columnspan=2)
+label1.grid(row=0,column=0,columnspan=3)
 
 #-------ENTRIES------#
 

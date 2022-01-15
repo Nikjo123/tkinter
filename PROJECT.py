@@ -4,14 +4,14 @@ root=Tk()
 root.title("THE PROFILE PAGE")
 root.geometry('1360x800')
 
-label2=Label(root,text="THE PROFILE PAGE FOR STAFF AND DOCTORS",font=("Arial",40,"bold"),border=10,relief=GROOVE,bg="lightgrey",fg="blue")
-label2.grid(row=0,column=0,columnspan=4,padx=50,pady=50)
+label1=Label(root,text="THE PROFILE PAGE FOR STAFF AND DOCTORS",font=("Arial",40,"bold"),border=10,relief=GROOVE,bg="lightgrey",fg="blue")
+label1.grid(row=0,column=0,columnspan=4,padx=50,pady=50)
 
-label3=Label(root,text="1.FOR THE HOSPTIAL STAFF, TO UPDATE OR CREATE A PATIENT INFORMATION PAGE",font=('Arial',24,"bold"), bg="lightgrey", fg="blue",)
-label3.grid(row=1,column=0,columnspan=3,pady=20)
+label2=Label(root,text="1.FOR THE HOSPTIAL STAFF, TO UPDATE OR CREATE A PATIENT INFORMATION PAGE",font=('Arial',24,"bold"), bg="lightgrey", fg="blue",)
+label2.grid(row=1,column=0,columnspan=3,pady=20)
 
-label4=Label(root,text="2.FOR THE HOSPITAL DOCTORS, PATIENT PRESCRIPTION TREATMENT AND DRUGS PAGE",font=('Arial', 23, "bold"), bg="lightgrey", fg="blue",)
-label4.grid(row=3,column=0,columnspan=3,pady=20)
+label3=Label(root,text="2.FOR THE HOSPITAL DOCTORS, PATIENT PRESCRIPTION TREATMENT AND DRUGS PAGE",font=('Arial', 23, "bold"), bg="lightgrey", fg="blue",)
+label3.grid(row=3,column=0,columnspan=3,pady=20)
 
 def open():
     win = Toplevel()
@@ -178,9 +178,9 @@ def open():
     def cancel():
         return win.destroy()
 
-    button1 = Button(win, text="SUBMIT AND SAVE", bg="green", fg="white", padx=0, pady=0, font=("Arial", 20, "bold"),command=submit)
-    button2 = Button(win, text="UPDATE AND SAVE", bg="green", fg="white", padx=0, pady=0, font=("Arial", 20, "bold"),command=update)
-    button3 = Button(win, text="QUIT OR LEAVE ", bg="green", fg="white", padx=0, pady=0, font=("Arial", 20, "bold"),command=cancel)
+    button1 = Button(win, text="SUBMIT AND SAVE", bg="green", fg="white", padx=0, pady=0, font=("Arial", 20, "bold"), border=5,command=submit)
+    button2 = Button(win, text="UPDATE AND SAVE", bg="green", fg="white", padx=0, pady=0, font=("Arial", 20, "bold"), border=5,command=update)
+    button3 = Button(win, text="QUIT OR LEAVE ", bg="green", fg="white", padx=0, pady=0, font=("Arial", 20, "bold"), border=5,command=cancel)
 
     button1.grid(row=12, column=0, pady=30)
     button2.grid(row=12, column=1, pady=30, padx=50,columnspan=2)
@@ -193,7 +193,7 @@ def open():
     label10.grid(row=13, column=0, columnspan=3)
 
 
-btn=Button(root, text="PLEASE CLICK HERE ", bg="green", fg="white",font=("Arial",30, "bold"),command=open)
+btn=Button(root, text="PLEASE CLICK HERE ", bg="green", fg="white",font=("Arial",30, "bold"), border=10,relief=GROOVE,command=open)
 btn.grid(row=2,column=1,columnspan=2,pady=25)
 
 
@@ -202,10 +202,10 @@ def openup():
     hell.geometry('1360x800')
     hell.title("DOCTOR PRESCRIPTION PAGE ")
 
-    label4 = Label(hell, text="THE DOCTOR MEDICINE AND DRUG INFORMATION", font=("Arial", 35, "bold"), border=10,relief=GROOVE, bg="lightgrey", fg="blue")
-    label4.grid(row=0, column=0, columnspan=4, padx=50)
+    label1 = Label(hell, text="THE DOCTOR MEDICINE AND DRUG INFORMATION", font=("Arial", 35, "bold"), border=10,relief=GROOVE, bg="lightgrey", fg="blue")
+    label1.grid(row=0, column=0, columnspan=4, padx=50)
 
-btn1=Button(root,text="PLEASE CLICK HERE ",bg="red", fg="white",font=("Arial", 30, "bold"),command=openup)
+btn1=Button(root,text="PLEASE CLICK HERE ",bg="red", fg="white",font=("Arial", 30, "bold"),relief=GROOVE,border=10,command=openup)
 btn1.grid(row=4,column=1,columnspan=2,pady=25)
 
 
